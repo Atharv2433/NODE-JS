@@ -1,5 +1,5 @@
 // File operations using node JS
-//CURD Operation using nodejs [fs module] 
+// CURD Operation using nodejs {fs module}
 
 const fs = require("fs");
 
@@ -28,9 +28,12 @@ console.log(data1);
 // Path of the file
 console.log(fs.realpathSync("xyz.txt"));
 
-// Read Operation
-const datas = fs.readFileSync("pqr.txt", "utf-8");
 
+
+
+
+// Delete operations
 // For Deleting the file and Directory
+const datas = fs.readFileSync("pqr.txt", "utf-8");
 fs.unlinkSync("pqr.txt");
 fs.rmdirSync("data");
